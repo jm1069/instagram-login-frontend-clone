@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    position: relative;
+}
+
+.screen{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+
+.panel{
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin: 10px 0px;
+    display: flex;
+}
+
+.login{
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+}
+
+.input-box::placeholder{
+    color: #444444;
+    font-size: 12px;
+}
+
+.input-box:focus {
+    outline: none;
+    border: 1px solid #8a8a8a;
+}
+
+.button{
+    width: 100%;
+    margin: 7px 0;
+    padding: 7px 0;
+    background-color: #b2dffc;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+}
+
+.divider{
+    margin-top: 7px;
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: #a3a3a3;
+    font-weight: 600;
+    gap: 20px;
+    align-items: center;
+}
+
+.line{
+    flex: 1; /*flex-grow: 1 */
+    height: 1px;
+    background-color: #cacaca;
+}
+
+.fb{
+    margin: 20px 0;
+    color: #3b5998;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fb::before{
+    font-family: "Font Awesome 5 Brands";
+    content: "\f082";
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.forgot{
+    color: #233d75;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.signup{
+    gap: 5px;
+    font-size: 15px;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.signup a{
+    text-decoration: none;
+    color: #33a3ee;
+    font-weight: bold;
+}
+
+.apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.app-stores{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.app-stores img{
+    width: 140px;
+    height: auto;
+}
+
+footer{
+    max-width: 35em;
+    margin-bottom: 40px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    list-style: none;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+li, a{
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+@media (max-width: 860px) {
+    .left{
+        display: none;
+    }
+}
