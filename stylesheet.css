@@ -47,7 +47,6 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    cursor: pointer;
     -webkit-appearance: none;
 }
 
@@ -55,6 +54,11 @@ body{
     width: 65%;
     margin-top: 20px;
     margin-bottom: 30px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: auto;
 }
 
 form{
@@ -93,6 +97,7 @@ form{
     border-radius: 5px;
     border: none;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .divider{
