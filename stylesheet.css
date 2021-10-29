@@ -31,6 +31,10 @@ body{
     position: absolute;
     left: 150px;
     top: 100px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .panel{
@@ -191,6 +195,12 @@ ul{
 li, a{
     color: #8a8a8a;
     text-decoration: none;
+}
+
+.disclaimer{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 @media (max-width: 860px) {
